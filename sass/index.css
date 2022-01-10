@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Samim';
+  src: url("../assests/fonts/samim/Samim.eot");
+  src: url("../assests/fonts/samim/Samim.eot?#iefix") format("embedded-opentype"), url("../assests/fonts/samim/Samim.woff2") format("woff2"), url("../assests/fonts/samim/Samim.woff") format("woff"), url("../assests/fonts/samim/Samim.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Samim';
+  src: url("../assests/fonts/samim/Samim-Bold.eot");
+  src: url("../assests/fonts/samim/Samim-Bold.eot?#iefix") format("embedded-opentype"), url("../assests/fonts/samim/Samim-Bold.woff2") format("woff2"), url("../assests/fonts/samim/Samim-Bold.woff") format("woff"), url("../assests/fonts/samim/Samim-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Samim';
+  src: url("../assests/fonts/samim/Samim-Medium.eot");
+  src: url("../assests/fonts/samim/Samim-Medium.eot?#iefix") format("embedded-opentype"), url("../assests/fonts/samim/Samim-Medium.woff2") format("woff2"), url("../assests/fonts/samim/Samim-Medium.woff") format("woff"), url("../assests/fonts/samim/Samim-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+body {
+  font-family: "Samim", Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=index.css.map */
