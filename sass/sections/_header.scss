@@ -53,5 +53,18 @@
     }
     .bottom-header {
         display:flex;
+        justify-content: space-between;
+        .main-menu {
+            ul {
+                display: flex;
+                li {
+                    a{
+                        display: block;
+                        padding: 10px 15px;
+                    }
+                }
+            }        
+
+        }
     }
 }
