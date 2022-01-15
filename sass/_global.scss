@@ -1,17 +1,22 @@
-body {
-    font-family: $main-font-family;
-    direction: rtl;
+html {
+  font-size: 16px;
 }
-*, *:after, *:before {
-    box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+body {
+  font-family: $main-font-family;
+  direction: rtl;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .container {
-    width:100%;
-    padding: 0 15px; 
+  width: 100%;
+  padding: 0 15px;
 }
 a {
-    transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
