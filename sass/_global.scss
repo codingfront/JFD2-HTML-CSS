@@ -1,5 +1,6 @@
 body {
     font-family: $main-font-family;
+    direction: rtl;
 }
 *, *:after, *:before {
     box-sizing: border-box;
@@ -10,4 +11,7 @@ body {
 .container {
     width:100%;
     padding: 0 15px; 
+}
+a {
+    transition: all 0.2s ease-in;
 }
