@@ -1,0 +1,41 @@
+#slider {
+    text-align:center;
+    position:relative;
+    ul{
+        display:flex;
+        justify-content: space-around;
+    }
+        .next, .prev {
+            position:absolute;
+            top:50%;
+            transform: translateY(-50%);
+            box-shadow:1px 1px 1px #000000;
+            padding:5px;
+        }
+        .next {
+            right:10px;
+            a{
+                i{
+
+                }
+            }
+        }
+        .prev {
+            left:10px;
+            a{
+                i{
+
+                }
+            }
+        }
+        &:after {
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:300px;
+            background:$slider-bg;
+            z-index:-2;
+        }
+}
