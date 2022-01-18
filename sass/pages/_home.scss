@@ -1,6 +1,7 @@
 #slider {
     text-align:center;
     position:relative;
+    margin-bottom: 50px;
     ul{
         display:flex;
         justify-content: space-around;
@@ -38,4 +39,30 @@
             background:$slider-bg;
             z-index:-2;
         }
+}
+#rooms {
+    display: flex;
+    & .room-right, .room-center, .room-left{
+        position: relative;
+        flex: 33.33%;
+        img {
+            display: block;
+            width: 100%;
+            filter:brightness(50%);
+        }
+        .room-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white-color;
+            text-align: center;
+            div {
+                border: 3px solid $white-color;
+            }
+            p {
+
+            }
+        }
+    }
 }
