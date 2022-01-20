@@ -277,6 +277,9 @@
                     border: none;
                     padding: 15px 20px;
                     float: right;
+                    &:focus-visible {
+                        outline: none;
+                    }
                 }
                 button {
                     height: 45px;
@@ -306,5 +309,53 @@
     .bottom-row {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+#footer {
+    .footer-top {
+        text-align: center;
+        background: $slider-bg;
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 0;
+        .box {
+            width: 40%;
+            height: 100px;
+            box-shadow: 0px 2px 3px 0px  $light-glassy-color;
+            background: $white-color;
+            position: relative;
+            overflow: hidden;
+            p {
+                position: relative;
+                transition: all 0.3s ease-in;
+                &.first {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+                &.second {
+                    color: $a-color;
+                    position: absolute;
+                    top: -120%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &:hover {
+                p {
+                    &.first {
+                        top: 120%
+                    }
+                    &.second {
+                        top: 50%
+                    }
+                }
+            }
+            
+        }
     }
 }
