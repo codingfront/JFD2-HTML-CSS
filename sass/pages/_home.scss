@@ -10,10 +10,14 @@
             color: $a-color;
             font-weight: bold;
             font-size: 14px;
+            margin: 10px;
         }
         .star {
             color: $a-color;
-            font-size: 8px;
+            font-size: 11px;
+            i {
+                margin-left: 5px;
+            }
         }
     }
     .next, .prev {
@@ -67,7 +71,7 @@
         h3 {
             transition: all 0.4s ease-in-out;
             position: absolute;
-            top: 40%;
+            top: 45%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-weight: 500;
@@ -94,7 +98,7 @@
         a {
             transition: all 0.4s ease-in-out;
             position: absolute;
-            top: 60%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: $white-color;
@@ -119,7 +123,7 @@
         }
         &:hover {
             h3 {
-                top: 15%;
+                top: 23%;
             }
             ul {
                 height: 200px;
@@ -127,6 +131,49 @@
             }
             a {
                 top: 80%;
+            }
+        }
+    }
+}
+
+
+#featured {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    .products {
+        margin-top: 50px;
+        display: flex;
+        flex-basis: 33%;
+        flex-wrap: wrap;
+        .product {
+            display: flex;
+            flex-basis: 33%;
+            margin-bottom: 23px;
+            .product__image {
+                margin-left: 20px;
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+            .product__content {
+                flex-basis: 60%;
+                h5 {
+                    letter-spacing: 1.5;
+                    font-weight: 900;
+                }
+                p {
+                    margin: 15px 0;
+                    font-size: 13px
+                }
+                .star {
+                    color: $a-color;
+                    font-size: 11px;
+                    i {
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

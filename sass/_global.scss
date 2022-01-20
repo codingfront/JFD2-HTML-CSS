@@ -12,11 +12,35 @@ body {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.container {
+.container-fluid {
   width: 100%;
   padding: 0 15px;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 a {
   transition: all 0.2s ease-in;
+}
+.same-title {
+  text-align: center;
+  .image {
+    svg {
+      width: 50px;
+      color: $a-color;
+    }
+  }
+  h3 {
+    margin: 20px inherit;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1.5;
+  }
+  a {
+    color: $a-color;
+  }
 }
