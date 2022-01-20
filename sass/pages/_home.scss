@@ -66,3 +66,65 @@
         }
     }
 }
+#featured-product {
+    padding-top: 150px;
+    .featured-product__first-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 11px;
+    }
+    .featured-product__second-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .featured-product__main-image {
+        display: flex;
+        .product-item {
+            width: 50%;
+            .product-item__content {
+                display: flex;
+                margin-bottom: 20px;
+                img {
+                    display: block;
+                    width: 50%;
+                    height: auto;
+                }
+                .item {
+                    width: 50%;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+#new-arrivals {
+    .first-row {
+        .line-icon {
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+        }
+        .new-arrivals__first-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 11px;
+        }
+        .new-arrivals__second-title {
+        text-align: center;
+        margin-bottom: 50px;
+        }
+    }
+    .second-row {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            display: block;
+            width: 25%;
+            height: auto;
+        }
+    }
+}
