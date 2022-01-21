@@ -20,6 +20,11 @@
             top: 0;
             left: 0;
         }
+        &:hover {
+            ul {
+                max-height: 600px;
+            }
+        }
     }
     .next, .prev {
         position:absolute;
@@ -42,8 +47,6 @@
         left:10px;
     }
     .menusquare {
-        width: 300px;
-        height: 300px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -54,6 +57,9 @@
             font-weight: bold;
         }
         ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s ease 0s;
             li {
                 padding: 4px 0;
                 font-family: $main-font-family;
