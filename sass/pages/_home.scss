@@ -199,9 +199,9 @@
 }
 #footer-top {
     background: #f6f6f6;
-    padding: 85px 0 60px;
+    padding: 75px 0 60px;
     width: 100%;
-    height: 400px;
+    height: 243px;
     .footer-content {
     display: flex;
     font-weight: 700;
@@ -216,16 +216,45 @@
     }
     .first-content {
         width: 400px;
-        height: 200px;
+        height: 108px;
         background: #ffffff;
         position: relative;
         
     }
     .second-content {
         width: 400px;
-        height: 200px;
+        height: 108px;
         background: #ffffff;
         position: relative;
     }
+    }
+}
+#footer-bottom {
+    // margin-bottom: 70px;
+    .footer-content__first {
+        display: flex;
+        justify-content: space-between;
+        .content-first__item {
+            padding: 70px;
+            p {
+                font-weight: bold;
+            }
+            li {
+                padding-bottom: 17px;
+            }
+            a {
+                color: $footer-font-color;
+            }
+        }
+        .content-first__brands {
+       
+        }
+        .content-first__image {
+            background-image: url(/assests/Images/footer_story_content.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 75%;
+            height: 430px;
+        }
     }
 }
