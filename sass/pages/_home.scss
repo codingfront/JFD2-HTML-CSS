@@ -266,3 +266,22 @@
     }
   }
 }
+#post {
+  background-color: $border-color;
+  width: 100%;
+  padding: 85px 0;
+  form {
+    display: flex;
+    justify-content: space-between;
+    .post-content {
+      border: none;
+      background-color: $white-color;
+      color: $black-color;
+      font-size: 1.8rem;
+      padding: 25px 10px;
+      width: 40%;
+      font-weight: 700;
+      box-shadow: 1px 1px 0px 0px rgb(0 0 0 / 39%);
+    }
+  }
+}
