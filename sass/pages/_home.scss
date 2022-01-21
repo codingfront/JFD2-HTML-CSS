@@ -37,3 +37,89 @@
             z-index:-2;
         }
 }
+#roomsmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    
+    .rooms {
+        width: calc(100%/3);
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #00000096;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        &:hover {
+            ul {
+                max-height: 600px;
+            }
+        }
+    }
+    .next, .prev {
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        padding: 15px;
+        border: 0;
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+        opacity: 0;
+        transition: all 1s;
+        a {
+            color: $a-color;
+        }
+    }
+    .next {
+        right:10px;
+    }
+    .prev {
+        left:10px;
+    }
+    .menusquare {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        text-align: center;
+        h3 {
+            color: #fff;
+            font-weight: bold;
+        }
+        ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 3s ease 0s;
+            li {
+                padding: 4px 0;
+                font-family: $main-font-family;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        button {
+            padding: 10px 60px;
+            font-family: $main-font-family;
+            background-color: transparent;
+            border: 2px solid #fff;
+            margin-top: 25px;
+            color: #fff;
+        }
+    }
+    &:hover {
+        .next, .prev {
+            opacity: 1;
+        }
+    }
+}
