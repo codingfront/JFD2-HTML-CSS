@@ -358,4 +358,82 @@
             
         }
     }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        .content {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin: 60px 80px;
+            .content__item {
+                margin-left: 30px;
+                h3 {
+                    margin-bottom: 40px;
+                    letter-spacing: 2;
+                    font-size: 28px;
+                }
+                ul {
+                    li {
+                        color: $dark-color;
+                        margin-top: 20px;
+                        &:hover {
+                            cursor: pointer;
+                            color: $darker-color;
+                        }
+                    }
+                }
+                form {
+                    margin-bottom: 40px;
+                    position: relative;
+                    input {
+                        border: none;
+                        font-size: 14px;
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                    button {
+                        float: left;
+                        margin: 5px 60px;
+                        color: #838383;
+                        background: #ffffff;
+                        border: none;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        top: 35px;
+                        right: 0;
+                        height: 2px;
+                        width: 85%;
+                        background: $black-color;
+                    }
+                }
+                .medias {
+                    a {
+                        display: inline-block;
+                        color: $a-color;
+                        padding: 5px;
+                        transition: all 0.3s ease-in;
+                        margin: 15px 0  15px 20px ;
+                        // when hover element                        
+                    }                    
+                }
+                .copyright {
+                    color: $a-color;
+                    margin-top: 40px;
+                    span {
+                        color: $darker-color;
+                    }
+                }
+            }
+        }
+        .image {
+            height: 450px;
+            img {
+                height: 100%;
+            }
+        }
+    }
 }
