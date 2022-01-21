@@ -30,12 +30,13 @@
         position:absolute;
         top:50%;
         transform: translateY(-50%);
-        box-shadow:0px 0px 2px #dddddd;
+        font-size: 18px;
         padding: 15px;
         border: 0;
-        background: white;
         border-radius: 3px;
-        color: gray;
+        color: rgb(255, 255, 255);
+        opacity: 0;
+        transition: all 1s;
         a {
             color: $a-color;
         }
@@ -59,7 +60,7 @@
         ul {
             max-height: 0;
             overflow: hidden;
-            transition: all .5s ease 0s;
+            transition: all 3s ease 0s;
             li {
                 padding: 4px 0;
                 font-family: $main-font-family;
@@ -75,6 +76,11 @@
             border: 2px solid #fff;
             margin-top: 25px;
             color: #fff;
+        }
+    }
+    &:hover {
+        .next, .prev {
+            opacity: 1;
         }
     }
 }
