@@ -1,57 +1,58 @@
 #slider {
-    text-align:center;
-    position:relative;
+    text-align: center;
+    position: relative;
     padding: 55px 0 85px 0;
-    ul{
-        display:flex;
+    ul {
+        display: flex;
         justify-content: space-around;
     }
-        .next, .prev {
-            position:absolute;
-            top:50%;
-            transform: translateY(-50%);
-            box-shadow:0px 0px 2px #dddddd;
-            padding: 15px;
-            border: 0;
-            background: white;
-            border-radius: 3px;
-            color: gray;
-            a {
-                color: $a-color;
-            }
+    .next,
+    .prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0px 0px 2px #dddddd;
+        padding: 15px;
+        border: 0;
+        background: white;
+        border-radius: 3px;
+        color: gray;
+        a {
+            color: $a-color;
         }
-        .next {
-            right:10px;
-        }
-        .prev {
-            left:10px;
-        }
-        &:after {
-            content:"";
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:50%;
-            background:$slider-bg;
-            z-index:-2;
-        }
+    }
+    .next {
+        right: 10px;
+    }
+    .prev {
+        left: 10px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: $slider-bg;
+        z-index: -2;
+    }
 }
 #roomsmenu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    
+
     .rooms {
-        width: calc(100%/3);
+        width: calc(100% / 3);
         position: relative;
-        img{
+        img {
             width: 100%;
             height: auto;
         }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             background-color: #00000096;
             height: 100%;
@@ -65,9 +66,10 @@
             }
         }
     }
-    .next, .prev {
-        position:absolute;
-        top:50%;
+    .next,
+    .prev {
+        position: absolute;
+        top: 50%;
         transform: translateY(-50%);
         font-size: 18px;
         padding: 15px;
@@ -81,10 +83,10 @@
         }
     }
     .next {
-        right:10px;
+        right: 10px;
     }
     .prev {
-        left:10px;
+        left: 10px;
     }
     .menusquare {
         position: absolute;
@@ -103,7 +105,7 @@
             li {
                 padding: 4px 0;
                 font-family: $main-font-family;
-                a{
+                a {
                     color: #fff;
                 }
             }
@@ -118,41 +120,42 @@
         }
     }
     &:hover {
-        .next, .prev {
+        .next,
+        .prev {
             opacity: 1;
         }
     }
 }
 #featured {
     padding: 150px 0;
-    .titles{
+    .titles {
         text-align: center;
         padding-bottom: 50px;
-    img {
-        filter: opacity(0.4);
-        width: 60px;
-        height: auto;
-    }
-    p {
-        font-family: $main-font-family;
-        font-weight: normal;
-        font-size: 34px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    a {
-        font-family: $main-font-family;
-        font-weight: lighter;
-        font-size: 15px;
-        color: $a-color;
-    }
+        img {
+            filter: opacity(0.4);
+            width: 60px;
+            height: auto;
+        }
+        p {
+            font-family: $main-font-family;
+            font-weight: normal;
+            font-size: 34px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        a {
+            font-family: $main-font-family;
+            font-weight: lighter;
+            font-size: 15px;
+            color: $a-color;
+        }
     }
     .featuredtiles {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .tile {
-            width: calc(100%/3);
+            width: calc(100% / 3);
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -173,6 +176,82 @@
                     &.itemname {
                         margin: 0;
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+#newarrival {
+    .titles {
+        text-align: center;
+        padding-bottom: 50px;
+        img {
+            filter: opacity(0.4);
+            width: 60px;
+            height: auto;
+        }
+        p {
+            font-family: $main-font-family;
+            font-weight: normal;
+            font-size: 34px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        a {
+            font-family: $main-font-family;
+            font-weight: lighter;
+            font-size: 15px;
+            color: $a-color;
+        }
+    }
+    .newarrivalpic {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: start;
+        .newitem {
+            width: 25%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .newarrivaltext {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                color: white;
+                p {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: all 0.5s;
+                    &.textdelay {
+                        transition: all 1s;
+                    }
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                background-color: #00000000;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s;
+            }
+            &:hover {
+                &:before {
+                    background-color: #00000096;
+                }
+                .newarrivaltext {
+                    p {
+                        max-height: 100px;
+                        transition: all 0.5s;
+                        &.textdelay {
+                            transition: all 1s;
+                        }
                     }
                 }
             }
