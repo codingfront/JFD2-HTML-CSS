@@ -153,3 +153,116 @@
     }
   }
 }
+#information {
+  margin-top: 50px;
+  .information-title {
+    text-align: center;
+    margin-bottom: 20px;
+    svg {
+      width: 70px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .information-title__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .information-title__subtitle {
+    }
+  }
+  .information-main {
+    display: flex;
+    justify-content: space-between;
+    .information-main__right {
+      width: 66%;
+      display: flex;
+      flex-wrap: wrap;
+      .information-main__right-top {
+        background-image: url(/assests/Images/bg-02.jpg);
+        background-position: 72px -432px;
+        background-size: cover;
+        width: 100%;
+        height: 314px;
+        margin-bottom: 3%;
+        color: $white-color;
+        font-weight: bold;
+        p {
+          margin-right: 40px;
+        }
+      }
+      .information-main__right-bottom {
+        display: flex;
+        justify-content: space-between;
+        img {
+          display: block;
+          width: 48.48%;
+          height: auto;
+          &:first-child {
+          }
+        }
+      }
+    }
+    .information-main__left {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      justify-self: space-between;
+      .information-main__left-top {
+        text-align: center;
+        border: 2px solid $border-color-lightgray;
+        margin-bottom: 6.5%;
+        height: 314px;
+        padding: 55px 33px;
+        .information-main__left-header {
+          color: $black-color;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+        .information-main__left-main {
+          color: $input-color-gray;
+          margin-bottom: 40px;
+        }
+        .information-main__left-emailbox {
+          color: $input-color-gray;
+          border: 2px solid $border-color-lightgray;
+          text-align: center;
+          form {
+            width: 90%;
+            input {
+              display: inline-block;
+              border: none;
+              padding: 10px;
+            }
+            button {
+              display: inline-block;
+              i {
+              }
+            }
+          }
+        }
+      }
+      .information-main__left-bottom {
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .information-logo {
+    display: flex;
+    padding: 90px 0;
+    a {
+      width: 16.6%;
+      .information-logo__img {
+        display: block;
+        height: auto;
+        opacity: 50%;
+        width: 100%;
+      }
+    }
+  }
+}
