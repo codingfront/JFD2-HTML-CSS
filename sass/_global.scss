@@ -22,3 +22,25 @@ body {
 a {
   transition: all 0.2s ease-in;
 }
+.titles {
+  text-align: center;
+  padding-bottom: 50px;
+  img {
+      filter: opacity(0.4);
+      width: 60px;
+      height: auto;
+  }
+  p {
+      font-family: $main-font-family;
+      font-weight: normal;
+      font-size: 34px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+  }
+  a {
+      font-family: $main-font-family;
+      font-weight: lighter;
+      font-size: 15px;
+      color: $a-color;
+  }
+}

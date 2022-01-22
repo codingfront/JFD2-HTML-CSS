@@ -128,28 +128,6 @@
 }
 #featured {
     padding: 150px 0;
-    .titles {
-        text-align: center;
-        padding-bottom: 50px;
-        img {
-            filter: opacity(0.4);
-            width: 60px;
-            height: auto;
-        }
-        p {
-            font-family: $main-font-family;
-            font-weight: normal;
-            font-size: 34px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        a {
-            font-family: $main-font-family;
-            font-weight: lighter;
-            font-size: 15px;
-            color: $a-color;
-        }
-    }
     .featuredtiles {
         display: flex;
         flex-wrap: wrap;
@@ -183,28 +161,6 @@
     }
 }
 #newarrival {
-    .titles {
-        text-align: center;
-        padding-bottom: 50px;
-        img {
-            filter: opacity(0.4);
-            width: 60px;
-            height: auto;
-        }
-        p {
-            font-family: $main-font-family;
-            font-weight: normal;
-            font-size: 34px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        a {
-            font-family: $main-font-family;
-            font-weight: lighter;
-            font-size: 15px;
-            color: $a-color;
-        }
-    }
     .newarrivalpic {
         display: flex;
         width: 100%;
@@ -257,4 +213,126 @@
             }
         }
     }
+}
+#aboutus {
+    padding: 150px 0 0 0;
+    .aboutusparts {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+        gap: 1rem;
+
+        div {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 30%;
+            height: 350px;
+            overflow: hidden;
+        }
+        .wearedel {
+            background-image: url("../../assests/Images/bg-02.jpg");
+            background-position: left -450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-grow: 2;
+            flex-basis: 61%;
+            p {
+                position: absolute;
+                right: 30px;
+                top: 50px;
+                margin: 0;
+                color: white;
+                font-size: 32px;
+                font-weight: bolder;
+            }
+        }
+        .newletter {
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid $a-color;
+            padding: 30px;
+            .newletter-titr {
+                font-weight: bolder;
+                font-size: 20px;
+                padding-top: 20px;
+            }
+            .newletter-text {
+                padding: 20px 20px;
+                color: $a-color;
+                font-weight: lighter;
+                font-size: 13px;
+            }
+        }
+        .bannerpic {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        padding: 130px 0;
+    }
+}
+#faqpart {
+    background-color: #f6f6f6;
+    .faqpart-flex {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    padding: 75px 0;
+    }
+    a {
+        display: block;
+    }
+    .freeshipping , .freereturn {
+        width: 49%;
+        height: 120px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0 2px 6px #0000000d;
+        .toplink {
+            height: 0;
+            line-height: 120px;
+            overflow: hidden;
+            width: 100%;
+            transition: all 1s;
+            color: $a-color;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+        .bottomlink {
+            height: 120px;
+            line-height: 120px;
+            width: 100%;
+            transition: all 1s;
+            color: black;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        &:hover {
+            .toplink {
+                height: 120px;
+                // line-height: 150px;
+                width: 100%;
+            transition: all 1s;
+
+            }
+            .bottomlink {
+                height: 0%;
+                // line-height: 0;
+                width: 100%;
+                overflow: hidden;
+            transition: all 1s;
+
+            }
+        }
+    }    
 }
