@@ -1,0 +1,87 @@
+#footer {
+  display: flex;
+  .footer-right {
+    padding: 20px 80px;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    .footer-right__right {
+      .footer-right__right-top {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $black-color;
+        padding-bottom: 10px;
+      }
+      .footer-right__right-bottom {
+        li {
+          margin-bottom: 20px;
+          color: $input-color-gray;
+        }
+      }
+    }
+    .footer-right__center {
+      .footer-right__center-top {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $black-color;
+        padding-bottom: 10px;
+      }
+      .footer-right__center-bottom {
+        li {
+          margin-bottom: 20px;
+          color: $input-color-gray;
+        }
+      }
+    }
+    .footer-right__left {
+      .footer-right__left-top {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $black-color;
+      }
+      .footer-right__left-email {
+        .footer-right__left-email-top {
+          font-size: 2rem;
+          font-weight: bold;
+          color: $black-color;
+          padding-bottom: 10px;
+        }
+        .footer-right__left-email-submit {
+          padding-bottom: 20px;
+          form {
+            border-bottom: 2px solid $black-color;
+            input {
+              border: none;
+              padding-left: 100px;
+            }
+            // button {
+            // }
+          }
+        }
+        .footer-right__left-icon {
+          padding-bottom: 10px;
+          img {
+            display: inline-block;
+            width: 10px;
+            height: auto;
+            margin-left: 10px;
+          }
+        }
+        .footer-right__left-secure {
+          color: $input-color-gray;
+        }
+      }
+    }
+  }
+  .footer-left {
+    width: 25%;
+    background-image: url(https://cdn.shopify.com/s/files/1/1297/1661/t/13/assets/footer_story_content.jpg?v=16887970229043202620);
+    height: 406px;
+    p {
+      color: $white-color;
+      padding: 20px 80px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+}
