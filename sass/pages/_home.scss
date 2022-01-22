@@ -56,7 +56,6 @@
     width: 100%;
     display: flex;
     margin-top: 100px;
-    position: relative;
     flex-direction: row;
   .right {
       position: relative;
@@ -67,8 +66,8 @@
       }
       .into {
         position: absolute;
-        padding: 217px 236px 272px 235px;
-        background: rgba(10,10,10,.5);   
+        top: 50%;
+        transform: translate(-50%);
       h1 {
         color: #fff;
         font-size: 2.2rem;
@@ -92,9 +91,7 @@
         width: 100%;
     }
     .into {
-        position: absolute;
-        padding: 227px 251px 272px 254px;
-        background: rgba(10,10,10,.5);      
+        position: absolute;     
       h1 {
         color: #fff; 
     }
@@ -116,9 +113,7 @@
           width: 100%;
     }
     .into {
-        position: absolute;
-        padding: 227px 269px 272px 235px;
-        background: rgba(10,10,10,.5);      
+        position: absolute;     
       h1 {
         color: #fff;
         } 
