@@ -1,0 +1,14 @@
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .information {
+        width: 25%;
+        
+    }
+    .categories {
+        width: 25%;
+    }
+
+}
