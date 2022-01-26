@@ -1,14 +1,111 @@
 #footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
-    .information {
-        width: 25%;
-        
-    }
-    .categories {
-        width: 25%;
+    margin: 0 0 50px 0;
+    .footerflex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;        
+        .information {
+            width: 15%;
+            p {
+                font-weight: bolder;
+                color: black;
+            }
+            li {
+                padding: 8px 0;
+            }
+            a {
+                font-weight: lighter;
+                font-size: 14px;
+                color: gray;
+            }
+        }
+        .categories {
+            width: 15%;
+            p {
+                font-weight: bolder;
+                color: black;
+            }
+            li {
+                padding: 8px 0;
+            }
+            a {
+                font-weight: lighter;
+                font-size: 14px;
+                color: gray;
+            }
+        }
+        .subscribe {
+            .footernewletters {
+                input {
+                    border: 0;
+                    padding: 0 0 0 150px;
+                }
+                button {
+                    i {
+                        border: 0;
+                        background-color: transparent;
+                    }
+                }
+            }
+            .brands {
+                padding: 50px 0;
+                i {
+                    padding: 0 35px;
+                }
+            }
+            width: 30%;
+            p {
+                font-weight: bolder;
+                color: black;
+            }
+            hr {
+                border-top: 1.5px solid black;
+            }
+            .footerlineone {
+                font-weight: lighter;
+                text-align: center;
+                margin: 0 0 5px 0;
+            }
+            .footerlinetwo {
+                font-weight: lighter;
+                font-size: 14px;
+                color: black;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        .lastpic {
+            width: 35%;
+            height: 360px;
+            position: relative;
+            background-image: url("../assests/Images/footer_story_content.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            p {
+                font-weight: bolder;
+                font-size: 18px;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                color: white;
+            }
+            .lastpichover{
+                position: absolute;
+                color: white;
+                font-size: 16px;
+                font-weight: lighter;
+                opacity: 0;
+                transition: all 1s;
+                text-align: right;
+                top:70px;
+                right: 30px;
+
+            }
+            &:hover .lastpichover {
+                opacity: 100%;
+            }
+        }
     }
 
 }

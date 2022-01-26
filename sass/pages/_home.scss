@@ -256,6 +256,13 @@
             background-color: transparent;
             border: 1px solid $a-color;
             padding: 30px;
+            .newletters-form {
+                border: 2px solid #e4e4e4;
+                input {
+                    border: 0;
+                    padding: 10px 0 10px 90px;
+                }
+            }
             .newletter-titr {
                 font-weight: bolder;
                 font-size: 20px;
