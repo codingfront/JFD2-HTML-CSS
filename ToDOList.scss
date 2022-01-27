@@ -1,0 +1,25 @@
+:root {
+    --dark : #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #EC4899;
+    --purple:#8B5CF6;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: var(--dark);
+    color: #ffffff;
+}
+header {
+    padding: 20px 40px;
+    width: 100%;
+    margin: 0 auto;
+}
